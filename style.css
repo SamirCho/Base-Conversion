@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    --color: #166e67;
+    --gap: 0.5rem;
+    --radius: 5px;
+  }
+  body{
+      font-family:"Trebuchet MS", sans-serif;
+      margin-left: 1%;
+      margin: 2rem;
+      background-color: #b3e6f4;
+      font-size: 0.9rem;
+      color: black;
+  }
+  div{
+      font-size: 30px;
+  }
+  button:hover{
+      filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  button{
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+  input{
+      font-size:30px;
+      width:50px;
+  }
+  span{
+      font-size:40px;
+      display: inline;
+  }
+  h1{
+      font-size: 70px;
+  }
+  h2{
+      font-size: large;
+  }
+  #container{
+      font-size: 40px;
+  }
+  #btn{
+      font-size: 20px;
+      background-color: coral;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: var(--gap);
+      cursor: pointer;
+      border-radius: var(--radius);
+      border: none;
+      box-shadow: var(--shadow);
+      position: relative;
+  }
+  .bx{
+      font-size: 10px;
+  }
+  .dropdown{
+      position: absolute;
+      width: 250px;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      margin-top: 0.3rem;
+      background: white;
+  }
+  .dropdown a{
+      display: flex;
+      align-items: center;
+      column-gap: var(--gap);
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      color: black;
+  }
+  .dropdown a:hover{
+      background-color: var(--color);
+      color: white;
+  }
+  .dropdown{
+      position: absolute;
+      width: 250px;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      margin-top: 0.3rem;
+      background: white;
+      transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);  
+      transform: translateY(0.5rem);
+      visibility: hidden;
+      opacity: 0;
+  }
+  .show{
+      transform: translateY(0rem);
+      visibility: visible;
+      opacity: 1;
+  }
